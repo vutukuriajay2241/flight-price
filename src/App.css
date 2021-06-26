@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+.flight-header{
+  display: flex;
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: #3f51b5;
+  color: white;
+  font-weight: 500;
+}
+.flight-icon{
+  font-size: 2rem !important;
+  color: white;
+  padding-right: 7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+}
+.input-field{
+  margin: 15px !important;
+}
+.submit-button{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.form-container{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  background-color: gray;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (min-width: 376px) {
+.form-container{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fields-container{
+  display: flex;
+  justify-content: space-around;
+}
 }
